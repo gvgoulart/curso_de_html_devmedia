@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <fieldset>
+            <legend>Conta</legend>   
+                <div>
+
+                    <label>Email:</label>
+                    <input type="email" name="email" required minlength="5" maxlength="250">
+                </div>
+                <div>
+                    <label>Senha:</label>
+                    <input name="senha"type="password">
+                </div>
+
+        </fieldset>
+    
+    
+        <fieldset>
+            <legend>Dados pessoais</legend>
+                <div>
+                    <label>Nome:</label>
+                    <input name="nome" type="text" placeholder="Ex: Gabriel">
+                </div>
+
+                <div>
+                    <label>Telefone:</label>
+                    <input name="telefone"type="text" placeholder="Ex: (16) 99219-1629">
+                </div>
+
+                <div>
+                    <label>Sexo:</label>
+                    <input type="radio" value="masculino" name="sexo" checked >
+                    <label >masculino</label>
+                    <input type="radio" value="feminino" name="sexo">
+                    <label >feminino</label>
+                </div>
+    
+                <div>
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="nascimento">
+                </div>
+
+                <div>
+                    <label>Foto de perfil</label>
+                    <input name="foto"type="file" accept="Image/*">
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+                <div>
+                    <label>Rua:</label>
+                    <input type="text" name="rua">
+                </div>
+
+                <div>
+                    <label>Complemento:</label>
+                    <input type="text" name="complemento">
+                </div>
+    
+                <div>
+                    <label>Número::</label>
+                    <input type="number" min="1" max="9999" name="numero_rua">
+                </div>
+
+                <div>
+                    <label>Cidade:</label>
+                    <input type="text" name="cidade">
+                </div>
+
+                <div>
+                    <label>Estado:</label>
+                <select name="endereco_estado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+                </div>
+        </fieldset>
+
+        <fieldset>
+        <legend>Anuncio</legend>
+            <div>
+                <label>Como conheceu a pizzaria</label>
+                <textarea name="como_conheceu_o_site"maxlength="256" placeholder="Explique para a gente como você conheceu a nossa pizzaria."></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" checked name="receber_anuncio">
+                <label>Desejo receber ofertas por e-mail</label>
+                
+            </div>
+        </fieldset>
+
+        <button type="submit" name="">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
